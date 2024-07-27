@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milk Coin Game</title>
-    <style>
-        body { text-align: center; }
-        .coin { font-size: 50px; cursor: pointer; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Milk Coin Game</h1>
     <div id="game">
         <span class="coin">🥛</span>
+        <p>Score: <span id="score">0</span></p>
     </div>
-    <script>
-        let score = 0;
-        document.querySelector('.coin').addEventListener('click', () => {
-            score++;
-            alert(`Score: ${score}`);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-ECHO is on.
